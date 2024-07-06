@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: #000;
+    min-height: 200vh;
+}
+li, a, button{
+ font-family: "Montserrat", sans-serif;
+ font-weight: 300;
+ font-size: 16px;
+ color: black;
+ text-decoration: none;
+}
+.search{
+    width: 450px;
+    padding: 10px;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    font-size: 18px;
+    text-align: left;
+    margin: 15px;
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: 200;
+    border:none;
+    color: rgba(53, 41, 24, 0.719);
+}
+.search:focus{
+    outline: none;
+}
+header{
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ padding: 0px 5%;
+ background-color: rgb(44, 26, 5);
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ transition: 0.6s;
+ z-index: 100000;
+}
+header ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header.sticky{
+    padding: 0px 5%;
+    background: rgb(25, 35, 46);
+    transition: 0.6s;
+}
+header.sticky .logo{
+    color: white;
+    background-color: rgb(25, 35, 46);
+
+    transition: 0.6s;
+}
+header.sticky li a{
+    color: whitesmoke;
+    background-color: rgb(25, 35, 46);
+}
+header.sticky li a:hover{
+    color: white;
+    background-color:#04a8d1c5;
+    transition: all 0.3s ease 0s;
+}
+header.sticky button:hover{
+    color: white;
+    background-color:#04a8d1c5;
+    transition: all 0.3s ease 0s;
+}
+.logo{
+ cursor: pointer;
+ margin-right: auto;
+ color:#ffffff;
+ position: relative;
+ transition: 0.6s;
+ 
+}
+.navigation{
+ list-style: none;
+}   
+.navigation li{
+ display: inline-block ;
+ padding: 0px 20px;
+}
+.navigation li a{
+    color: whitesmoke;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(44, 26, 5);
+
+
+}
+.navigation li a:hover{
+ transition: all 0.3s ease 0s;
+ padding: 9px 25px;
+ color: rgb(44, 26, 5);
+ background-color:#fafafa;
+ border: none;
+ border-radius: 50px;
+ cursor: pointer;
+ transition: all 0.3s ease 0s;
+} 
+button{
+ padding: 9px 25px;
+ border: none;
+ border-radius: 50px;
+ cursor: pointer;
+ margin-left: 20px;
+ background-color: whitesmoke;
+}
+button:hover{
+ color: white;
+ background-color: rgba(131, 56, 5, 0.452);
+ transition: all 0.3s ease 0s;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(expert.jpeg);
+    background-size: cover;
+}
